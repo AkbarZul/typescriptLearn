@@ -123,4 +123,13 @@ withIncrementedValue((receivedValue) => {
   
 })
 
+// Generics
+interface Box<value> {
+  value: value
+}
 
+let numberBox: Box<number> = { value: 7 }
+let stringBox: Box<string> = { value: "test" }
+
+console.log(numberBox.value);
+console.log(stringBox.value);
