@@ -145,3 +145,17 @@ function logAndReturnValue<value>(value: value) : value {
 const result = logAndReturnValue(new Date("2023-12-21"))
 
 console.log(result);
+
+// Interface
+interface myType {
+  memberOne: string;
+  memberTwo: number
+}
+
+let myVar: myType = {
+  memberOne: "Tets",
+  memberTwo: 5
+}
+
+console.log(myVar);
+
