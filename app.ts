@@ -133,3 +133,15 @@ let stringBox: Box<string> = { value: "test" }
 
 console.log(numberBox.value);
 console.log(stringBox.value);
+
+// Inferring Generic Type
+
+function logAndReturnValue<value>(value: value) : value {
+  console.log(value);
+  return value
+  
+}
+
+const result = logAndReturnValue(new Date("2023-12-21"))
+
+console.log(result);
